@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1044509058138-725bdlbt6h1qui4knfh5iat7dng14bei.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1044509058138-725bdlbt6h1qui4knfh5iat7dng14bei</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAk7FQU8g5v4w9b4YWMGdOjyu5nCmqGVgM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1044509058138</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>honeysuckle.Montavie</string>
+	<key>PROJECT_ID</key>
+	<string>montavie-f6dea</string>
+	<key>STORAGE_BUCKET</key>
+	<string>montavie-f6dea.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1044509058138:ios:7c377e075c970c71e9a463</string>
+</dict>
+</plist>
