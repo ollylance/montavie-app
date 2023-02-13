@@ -113,8 +113,8 @@ struct ImageTaker: UIViewControllerRepresentable {
     }
 }
 
+// Using PHPicker to get location and date from the images in the photo library
 struct ImagePicker: UIViewControllerRepresentable {
-        
     @Binding var selectedImage: Data?
     @Binding var date: Date
     @Binding var location: CLLocationCoordinate2D?
@@ -161,6 +161,7 @@ struct ImagePicker: UIViewControllerRepresentable {
                     } else {
                         DispatchQueue.main.async {
                             let selected = selectedImage as? UIImage
+                            // compress image data to minimize storage costs
                             self.parent.selectedImage = selected?.jpegData(compressionQuality: 0.1)
                         }
                     }

@@ -8,7 +8,9 @@
 import SwiftUI
 import FirebaseAuth
 
+// UI View modified from https://github.com/BLCKBIRDS/Authentication-with-SwiftUI-and-Firebase
 struct SignUpView: View {
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewRouter: ViewRouter
     @ObservedObject var profileData: ProfileData
     
@@ -75,15 +77,15 @@ struct SignUpView: View {
             case .some(_):
                 let imageData = UIImage(named: "ProfileTemp")!.jpegData(compressionQuality: 1.0)
                 profileData.updateProfile(username: username, imageData: imageData!) { success in
-                    if success == nil {
+                    guard success != nil else {
                         print("Error uploading information.")
                         signUpProcessing = false
                         signUpErrorMessage = "Could not create account."
                         return
                     }
-                    profileData.profile.email = userEmail
+                    profileData.fetchProfile()
+                    self.presentationMode.wrappedValue.dismiss()
                     signUpProcessing = false
-                    viewRouter.currentPage = .close
                 }
             }
         }
@@ -102,7 +104,7 @@ struct SignUpCredentialFields: View {
     @Binding var password: String
 
     var body: some View {
-        TextField("Username", text: $username)
+        TextField("Display Name", text: $username)
             .padding()
             .background(Color("LightText"))
             .cornerRadius(20)

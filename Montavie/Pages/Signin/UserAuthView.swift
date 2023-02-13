@@ -18,11 +18,6 @@ struct UserAuthView: View {
             SignUpView(viewRouter: viewRouter, profileData: profileData)
         case .signInPage:
             SignInView(viewRouter: viewRouter, profileData: profileData)
-        case .close:
-            Text("Success")
-                .onAppear{
-                    self.presentationMode.wrappedValue.dismiss()
-                }
         }
     }
 }
@@ -34,7 +29,6 @@ class ViewRouter: ObservableObject {
 enum Page {
     case signUpPage
     case signInPage
-    case close
 }
 
 struct UserAuthView_Previews: PreviewProvider {

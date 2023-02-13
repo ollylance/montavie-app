@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// custom TabBar from https://www.youtube.com/watch?v=DzBKVygK6sc
 enum TabBarItem: Hashable {
     case feed, post, map
     

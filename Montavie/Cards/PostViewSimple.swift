@@ -10,6 +10,7 @@ import SDWebImageSwiftUI
 import Shimmer
 import FirebaseAuth
 
+// PostViewSimple is the regular PostView without the MatchedGeometryEffects and location
 struct PostViewSimple: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var post: Post

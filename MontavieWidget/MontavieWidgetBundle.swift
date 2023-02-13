@@ -9,9 +9,8 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct RainyDayLoverWidgetBundle: WidgetBundle {
+struct MontavieWidgetBundle: WidgetBundle {
     var body: some Widget {
-        RainyDayLoverWidget()
-        RainyDayLoverWidgetLiveActivity()
+        MontavieWidget()
     }
 }

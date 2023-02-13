@@ -8,12 +8,4 @@
 import SwiftUI
 import PhotosUI
 
-struct MapValue: Identifiable, Equatable, Hashable {
-    var id: UUID = UUID()
-    var date : Date = Date()
-    var color : String = "BrandLightGrey"
-    var text: String = ""
-    var uid: String = ""
-    var key: String = ""
-    var location: CLLocationCoordinate2D? = nil
-}
+

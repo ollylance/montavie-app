@@ -108,7 +108,6 @@ class FeedData: ObservableObject {
                 "lat": post.location?.latitude ?? 0.0,
                 "lng": post.location?.longitude ?? 0.0
             ]) { err in
-                // delete image
                 if let err = err {
                     print("Error writing document: \(err)")
                 } else {

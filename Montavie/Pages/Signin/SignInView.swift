@@ -8,7 +8,9 @@
 import SwiftUI
 import FirebaseAuth
 
+// UI View modified from https://github.com/BLCKBIRDS/Authentication-with-SwiftUI-and-Firebase
 struct SignInView: View {
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewRouter: ViewRouter
     @ObservedObject var profileData: ProfileData
     @State var email = ""
@@ -69,7 +71,7 @@ struct SignInView: View {
             }
             profileData.fetchProfile()
             signInProcessing = false
-            viewRouter.currentPage = .close
+            self.presentationMode.wrappedValue.dismiss()
         }
     }
 }

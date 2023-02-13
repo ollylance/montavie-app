@@ -41,7 +41,6 @@ struct NewPostSettingsView: View {
                         Text("done")
                             .font(.system(size: 18, weight: .medium, design: .rounded))
                             .foregroundColor(Color("BrandDarkGrey"))
-//                        Image("Check")
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.horizontal, 20)

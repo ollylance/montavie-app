@@ -8,6 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+// some UI references received from https://www.youtube.com/watch?v=Ca0SisRHYuY&list=PLwvDm4Vfkdpha5eVTjLM0eRlJ7-yDDwBk&index=7
 struct LocationPreviewView: View {
     @State var post: Post
     @ObservedObject var sessionAuth: SessionAuth

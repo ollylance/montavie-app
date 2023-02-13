@@ -20,6 +20,7 @@ struct TextEditView: View {
     }
 }
 
+// from https://www.appcoda.com/swiftui-textview-uiviewrepresentable/
 struct TextView: UIViewRepresentable {
     @Binding var text: String
     @Binding var didStartEditing: Bool

@@ -120,8 +120,6 @@ struct MapPolylineView: UIViewRepresentable {
         }
         return polylineVal
     }
-    
-
 }
 
 class Coordinator: NSObject, MKMapViewDelegate {

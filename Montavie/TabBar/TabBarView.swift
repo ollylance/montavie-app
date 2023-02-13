@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// custom TabBar from https://www.youtube.com/watch?v=DzBKVygK6sc
 struct TabBarView: View {
     let tabs: [TabBarItem]
     @Binding var selection: TabBarItem

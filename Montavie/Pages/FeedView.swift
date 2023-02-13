@@ -189,7 +189,6 @@ struct ForEachWithIndex<
 }
 
 struct ContextModifier: ViewModifier {
-    // ContextMenu Modifier
     @ObservedObject var feedData: FeedData
     var post: Post
 

@@ -157,6 +157,6 @@ extension CommentView {
 
 struct CommentView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentView(post: .constant(Post()), sessionAuth: SessionAuth(), commentData: CommentData())
+        CommentView(post: .constant(Post()), sessionAuth: SessionAuth())
     }
 }

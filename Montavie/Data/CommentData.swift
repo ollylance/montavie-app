@@ -32,7 +32,6 @@ class CommentData: ObservableObject {
             guard let documents = snap?.documents else {
                 return
             }
-            
             self.comments = documents.map { (queryDocumentSnapshot) -> Comment in
                 let data = queryDocumentSnapshot.data()
                 let key = queryDocumentSnapshot.documentID
@@ -78,7 +77,6 @@ class CommentData: ObservableObject {
     private func getProfileImageURL(uid: String, completion: @escaping((String) -> ())) {
         let storageRef = self.storage.reference()
         
-        // Create a reference to the file you want to upload
         let profileRef = storageRef.child("profiles/\(uid).jpg")
         profileRef.downloadURL { (url, error) in
             guard url != nil else {

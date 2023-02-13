@@ -47,10 +47,6 @@ struct Provider: TimelineProvider {
     }
     
     func fetchFromDB(completion: @escaping ((PhotoModel) -> ())) {
-        guard Auth.auth().currentUser != nil else {
-            completion(PhotoModel(data: nil, error: "Please log in"))
-            return
-        }
         let db = Firestore.firestore().collection("posts").order(by: "date", descending: true).limit(to: 1)
         db.getDocuments { (snap, err) in
             guard let documents = snap?.documents else {
@@ -63,12 +59,11 @@ struct Provider: TimelineProvider {
             let imageData = try? Data(contentsOf: URL(string: imageURL)!)
             
             completion(PhotoModel(data: UIImage(data: imageData!), error: ""))
-            
         }
     }
 }
         
-struct RainyDayLoverWidgetEntryView : View {
+struct MontavieWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -98,7 +93,7 @@ struct RainyDayLoverWidgetEntryView : View {
     }
 }
 
-struct RainyDayLoverWidget: Widget {
+struct MontavieWidget: Widget {
     let kind: String = "MontavieWidget"
 
     init() {
@@ -108,7 +103,7 @@ struct RainyDayLoverWidget: Widget {
     
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            RainyDayLoverWidgetEntryView(entry: entry)
+            MontavieWidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemSmall])
         .configurationDisplayName("Montavie")
@@ -117,6 +112,7 @@ struct RainyDayLoverWidget: Widget {
 }
 
 extension UIImage {
+    // from https://www.advancedswift.com/resize-uiimage-no-stretching-swift/
     func scalePreservingAspectRatio(targetSize: CGSize) -> UIImage {
         // Determine the scale factor that preserves aspect ratio
         let widthRatio = targetSize.width / size.width
@@ -148,7 +144,7 @@ extension UIImage {
 
 struct RainyDayLoverWidget_Previews: PreviewProvider {
     static var previews: some View {
-        RainyDayLoverWidgetEntryView(entry: SimpleEntry(date: Date(), photoData: PhotoModel(data: nil, error: "No data")))
+        MontavieWidgetEntryView(entry: SimpleEntry(date: Date(), photoData: PhotoModel(data: nil, error: "No data")))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

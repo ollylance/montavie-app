@@ -13,6 +13,16 @@ import FirebaseAuth
 import PhotosUI
 import MapKit
 
+struct MapValue: Identifiable, Equatable, Hashable {
+    var id: UUID = UUID()
+    var date : Date = Date()
+    var color : String = "BrandLightGrey"
+    var text: String = ""
+    var uid: String = ""
+    var key: String = ""
+    var location: CLLocationCoordinate2D? = nil
+}
+
 class MapData: ObservableObject {
     @Published var mapData = [Post]()
     @Published var selectedLocation: Post? = nil

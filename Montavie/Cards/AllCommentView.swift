@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseAuth
 import SDWebImageSwiftUI
 
+// all comments in one place for main poster
 struct AllCommentView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var sessionAuth: SessionAuth

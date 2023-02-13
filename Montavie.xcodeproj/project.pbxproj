@@ -12,7 +12,6 @@
 		380DC36529201488000A0EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380DC36429201488000A0EDD /* Assets.xcassets */; };
 		380DC36829201488000A0EDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380DC36729201488000A0EDD /* Preview Assets.xcassets */; };
 		380DC36F292014CF000A0EDD /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DC36E292014CF000A0EDD /* FeedView.swift */; };
-		380DC37129201574000A0EDD /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DC37029201574000A0EDD /* ThemeView.swift */; };
 		380DC378292016A9000A0EDD /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DC377292016A9000A0EDD /* FeedData.swift */; };
 		380DC37A29201708000A0EDD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DC37929201708000A0EDD /* Post.swift */; };
 		380DC37D29201A39000A0EDD /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DC37C29201A39000A0EDD /* PostView.swift */; };
@@ -23,8 +22,6 @@
 		382F6F61292FE452008AE30F /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382F6F60292FE452008AE30F /* RouteView.swift */; };
 		382F6F63292FEB15008AE30F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382F6F62292FEB15008AE30F /* SettingsView.swift */; };
 		38307DAF298D800500ED4B2D /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38307DAE298D800500ED4B2D /* MapData.swift */; };
-		38307DB1298D802A00ED4B2D /* MapValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38307DB0298D802A00ED4B2D /* MapValue.swift */; };
-		38307DB3298D990500ED4B2D /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38307DB2298D990500ED4B2D /* MapModel.swift */; };
 		38307DBB298DBB6700ED4B2D /* TrailData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 38307DBA298DBB6700ED4B2D /* TrailData.geojson */; };
 		38307DBF298EC03400ED4B2D /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38307DBE298EC03400ED4B2D /* LocationPreviewView.swift */; };
 		38307DC1298EEF5300ED4B2D /* PostViewSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38307DC0298EEF5300ED4B2D /* PostViewSimple.swift */; };
@@ -54,7 +51,6 @@
 		386F1C1B292AE56600B45390 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 386F1C1A292AE56600B45390 /* Shimmer */; };
 		386F1C1D292AEF2500B45390 /* NewPostSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F1C1C292AEF2400B45390 /* NewPostSettingsView.swift */; };
 		386F1C1F292B002300B45390 /* NewPostAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F1C1E292B002300B45390 /* NewPostAddView.swift */; };
-		387433A92923E5CC0099C41D /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387433A82923E5CC0099C41D /* FileManagerExtension.swift */; };
 		388352322923236E009876B3 /* TextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388352312923236E009876B3 /* TextEditView.swift */; };
 		388B09D5292C1512000203CA /* ColorSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B09D4292C1512000203CA /* ColorSelectionView.swift */; };
 		388B09D7292C1521000203CA /* FrameSizeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B09D6292C1521000203CA /* FrameSizeSelectionView.swift */; };
@@ -67,7 +63,6 @@
 		38E4795B297F1FBD0054E098 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4795A297F1FBD0054E098 /* WidgetKit.framework */; };
 		38E4795D297F1FBD0054E098 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4795C297F1FBD0054E098 /* SwiftUI.framework */; };
 		38E47960297F1FBD0054E098 /* MontavieWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4795F297F1FBD0054E098 /* MontavieWidgetBundle.swift */; };
-		38E47962297F1FBD0054E098 /* MontavieWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E47961297F1FBD0054E098 /* MontavieWidgetLiveActivity.swift */; };
 		38E47964297F1FBD0054E098 /* MontavieWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E47963297F1FBD0054E098 /* MontavieWidget.swift */; };
 		38E47966297F1FBF0054E098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E47965297F1FBF0054E098 /* Assets.xcassets */; };
 		38E4796A297F1FC00054E098 /* MontavieWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38E47958297F1FBD0054E098 /* MontavieWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -109,7 +104,6 @@
 		380DC36429201488000A0EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		380DC36729201488000A0EDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		380DC36E292014CF000A0EDD /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		380DC37029201574000A0EDD /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		380DC377292016A9000A0EDD /* FeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
 		380DC37929201708000A0EDD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		380DC37C29201A39000A0EDD /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
@@ -121,8 +115,6 @@
 		382F6F60292FE452008AE30F /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		382F6F62292FEB15008AE30F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		38307DAE298D800500ED4B2D /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
-		38307DB0298D802A00ED4B2D /* MapValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapValue.swift; sourceTree = "<group>"; };
-		38307DB2298D990500ED4B2D /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		38307DBA298DBB6700ED4B2D /* TrailData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrailData.geojson; sourceTree = "<group>"; };
 		38307DBE298EC03400ED4B2D /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		38307DC0298EEF5300ED4B2D /* PostViewSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewSimple.swift; sourceTree = "<group>"; };
@@ -143,7 +135,6 @@
 		386F1C152928697500B45390 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		386F1C1C292AEF2400B45390 /* NewPostSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostSettingsView.swift; sourceTree = "<group>"; };
 		386F1C1E292B002300B45390 /* NewPostAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostAddView.swift; sourceTree = "<group>"; };
-		387433A82923E5CC0099C41D /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 		388352312923236E009876B3 /* TextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditView.swift; sourceTree = "<group>"; };
 		388B09D4292C1512000203CA /* ColorSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionView.swift; sourceTree = "<group>"; };
 		388B09D6292C1521000203CA /* FrameSizeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSizeSelectionView.swift; sourceTree = "<group>"; };
@@ -156,7 +147,6 @@
 		38E4795A297F1FBD0054E098 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		38E4795C297F1FBD0054E098 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		38E4795F297F1FBD0054E098 /* MontavieWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontavieWidgetBundle.swift; sourceTree = "<group>"; };
-		38E47961297F1FBD0054E098 /* MontavieWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontavieWidgetLiveActivity.swift; sourceTree = "<group>"; };
 		38E47963297F1FBD0054E098 /* MontavieWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontavieWidget.swift; sourceTree = "<group>"; };
 		38E47965297F1FBF0054E098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E47967297F1FBF0054E098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -232,7 +222,6 @@
 				380DC37B29201A25000A0EDD /* Cards */,
 				380DC37329201674000A0EDD /* Data */,
 				3834446529243985004770EC /* TabBar */,
-				380DC37029201574000A0EDD /* ThemeView.swift */,
 				38307DCC299187B000ED4B2D /* Keyboard Responder.swift */,
 				38B66D2A296CA59B007CE718 /* LocationManager.swift */,
 				386F1C1229283D7E00B45390 /* ColorBlended.swift */,
@@ -259,10 +248,7 @@
 				38307DCA2991468D00ED4B2D /* CommentData.swift */,
 				380DC377292016A9000A0EDD /* FeedData.swift */,
 				38307DAE298D800500ED4B2D /* MapData.swift */,
-				387433A82923E5CC0099C41D /* FileManagerExtension.swift */,
 				383444832925DFE2004770EC /* DateFunctions.swift */,
-				38307DB0298D802A00ED4B2D /* MapValue.swift */,
-				38307DB2298D990500ED4B2D /* MapModel.swift */,
 				38307DBA298DBB6700ED4B2D /* TrailData.geojson */,
 			);
 			path = Data;
@@ -343,7 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				38E4795F297F1FBD0054E098 /* MontavieWidgetBundle.swift */,
-				38E47961297F1FBD0054E098 /* MontavieWidgetLiveActivity.swift */,
 				38E47963297F1FBD0054E098 /* MontavieWidget.swift */,
 				38E47965297F1FBF0054E098 /* Assets.xcassets */,
 				38E47967297F1FBF0054E098 /* Info.plist */,
@@ -482,9 +467,7 @@
 				3834446929243CFA004770EC /* AppTabBarView.swift in Sources */,
 				383444822925B4E7004770EC /* MainView.swift in Sources */,
 				388B09D5292C1512000203CA /* ColorSelectionView.swift in Sources */,
-				380DC37129201574000A0EDD /* ThemeView.swift in Sources */,
 				38DA5A452996C3570080FB34 /* AllCommentView.swift in Sources */,
-				38307DB1298D802A00ED4B2D /* MapValue.swift in Sources */,
 				38307DCB2991468D00ED4B2D /* CommentData.swift in Sources */,
 				380DC36F292014CF000A0EDD /* FeedView.swift in Sources */,
 				38B66D2F296CBCD2007CE718 /* LocationView.swift in Sources */,
@@ -494,7 +477,6 @@
 				382F6F61292FE452008AE30F /* RouteView.swift in Sources */,
 				383444672924399B004770EC /* TabBarContainerView.swift in Sources */,
 				38307DBF298EC03400ED4B2D /* LocationPreviewView.swift in Sources */,
-				38307DB3298D990500ED4B2D /* MapModel.swift in Sources */,
 				38B66D2B296CA59B007CE718 /* LocationManager.swift in Sources */,
 				380DC37F2921DA94000A0EDD /* NewPostView.swift in Sources */,
 				383444842925DFE2004770EC /* DateFunctions.swift in Sources */,
@@ -515,7 +497,6 @@
 				38307DCD299187B100ED4B2D /* Keyboard Responder.swift in Sources */,
 				380DC37A29201708000A0EDD /* Post.swift in Sources */,
 				388B09D7292C1521000203CA /* FrameSizeSelectionView.swift in Sources */,
-				387433A92923E5CC0099C41D /* FileManagerExtension.swift in Sources */,
 				38E479732981C9B50054E098 /* Secrets.swift in Sources */,
 				38307DC5299013EC00ED4B2D /* SignUpView.swift in Sources */,
 				38D3D9F629520062006B1E67 /* Profile.swift in Sources */,
@@ -529,7 +510,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E47962297F1FBD0054E098 /* MontavieWidgetLiveActivity.swift in Sources */,
 				38E479742981E4AE0054E098 /* Secrets.swift in Sources */,
 				38E47960297F1FBD0054E098 /* MontavieWidgetBundle.swift in Sources */,
 				38E47964297F1FBD0054E098 /* MontavieWidget.swift in Sources */,
