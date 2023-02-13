@@ -67,10 +67,10 @@
 
 ## Contact
 You can contact support through any of the following means:
-> Instagram: [@themontavie](https://www.instagram.com/themontavie)
-> Email:  [olly.lance15@gmail.com](mailto:olly.lance15@gmail.com)
-> Phone: 717-553-3107
-> Address: 223 West Woods Drive, Lititz PA, 17543
+> Instagram: [@themontavie](https://www.instagram.com/themontavie) &nbsp;&middot;&nbsp;
+> Email:  [olly.lance15@gmail.com](mailto:olly.lance15@gmail.com) &nbsp;&middot;&nbsp;
+> Phone: 717-553-3107 &nbsp;&middot;&nbsp;
+> Address: 223 West Woods Drive, Lititz PA, 17543 &nbsp;&middot;&nbsp;
 
 ## License
 
