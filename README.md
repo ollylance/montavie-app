@@ -60,6 +60,7 @@
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7288.PNG" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7289.PNG" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7290.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_2FAB4EB90B33-1.jpeg" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7291.jpg" width="200"/>
 
 </div>
