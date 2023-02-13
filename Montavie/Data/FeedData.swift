@@ -18,7 +18,7 @@ class FeedData: ObservableObject {
     private var db = Firestore.firestore()
     private var storage = Storage.storage()
     var lastDoc: QueryDocumentSnapshot? = nil
-    var paginationNum = 6
+    var paginationNum = 8
     
     func fetchData() {
         db.collection("posts").order(by: "date", descending: true).limit(to: paginationNum).addSnapshotListener { (snap, err) in
