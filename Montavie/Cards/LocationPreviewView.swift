@@ -12,6 +12,7 @@ import SDWebImageSwiftUI
 struct LocationPreviewView: View {
     @State var post: Post
     @ObservedObject var sessionAuth: SessionAuth
+    @ObservedObject var profileData: ProfileData
     @ObservedObject var mapData: MapData
     @State var isOpenPost = false
     
@@ -73,14 +74,14 @@ struct LocationPreviewView: View {
             .offset(y: 65))
         .cornerRadius(20)
         .fullScreenCover(isPresented: $isOpenPost) {
-            PostViewSimple(post: $post, sessionAuth: sessionAuth)
+            PostViewSimple(post: $post, sessionAuth: sessionAuth, profileData: profileData)
         }
     }
 }
 
 struct LocationPreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationPreviewView(post: Post(), sessionAuth: SessionAuth(), mapData: MapData())
+        LocationPreviewView(post: Post(), sessionAuth: SessionAuth(), profileData: ProfileData(), mapData: MapData())
             .padding()
     }
 }

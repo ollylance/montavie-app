@@ -15,6 +15,7 @@ struct PostViewSimple: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var post: Post
     @ObservedObject var sessionAuth: SessionAuth
+    @ObservedObject var profileData: ProfileData
     @State var showComments = false
     
     var body: some View {
@@ -80,7 +81,7 @@ struct PostViewSimple: View {
             .padding(.trailing, 40)
         }
         .fullScreenCover(isPresented: $showComments) {
-            CommentView(post: $post, sessionAuth: sessionAuth)
+            CommentView(post: $post, profileData: profileData, sessionAuth: sessionAuth)
         }
     }
 }
@@ -88,7 +89,7 @@ struct PostViewSimple: View {
 struct PostViewSimple_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        PostViewSimple(post: .constant(Post(text: "hello")), sessionAuth: SessionAuth())
+        PostViewSimple(post: .constant(Post(text: "hello")), sessionAuth: SessionAuth(), profileData: ProfileData())
     }
 }
 

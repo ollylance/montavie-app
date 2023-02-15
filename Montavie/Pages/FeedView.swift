@@ -109,7 +109,7 @@ struct FeedView: View {
                 }
             }
             if show {
-                PostView(sessionAuth: sessionAuth, post: $selected, show: $show, namespace: namespace)
+                PostView(sessionAuth: sessionAuth, profileData: profileData, post: $selected, show: $show, namespace: namespace)
             }
         }
     }

@@ -119,6 +119,19 @@ class CommentData: ObservableObject {
         }
     }
     
+    func reportComment(comment: Comment) {
+        self.db.collection("reports").addDocument(data: [
+            "uid": comment.uid,
+            "commentID": comment.key,
+            "comment": comment.comment,
+            "username": comment.username,
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            }
+        }
+    }
+    
     func getPost(id: String, completion: @escaping((Post) -> ())) {
         self.db.collection("posts").document(id).getDocument { (snap, err) in
             guard snap?.exists != nil && snap!.exists else {

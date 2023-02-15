@@ -12,6 +12,7 @@ struct MapView: View {
     @Binding var tabSelection: TabBarItem
     @ObservedObject var mapData: MapData
     @ObservedObject var sessionAuth: SessionAuth
+    @ObservedObject var profileData: ProfileData
     @State var selectedLocation: Post? = nil
     
     var body: some View {
@@ -26,7 +27,7 @@ struct MapView: View {
                                 if post == mapData.selectedLocation {
                                     VStack {
                                         Spacer()
-                                        LocationPreviewView(post: mapData.selectedLocation!, sessionAuth: sessionAuth, mapData: mapData)
+                                        LocationPreviewView(post: mapData.selectedLocation!, sessionAuth: sessionAuth, profileData: profileData, mapData: mapData)
                                             .padding()
                                     }
                                     .transition(.asymmetric(insertion: .opacity, removal: .opacity))
@@ -180,6 +181,6 @@ class Coordinator: NSObject, MKMapViewDelegate {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(tabSelection: .constant(.post), mapData: MapData(), sessionAuth: SessionAuth())
+        MapView(tabSelection: .constant(.post), mapData: MapData(), sessionAuth: SessionAuth(), profileData: ProfileData())
     }
 }

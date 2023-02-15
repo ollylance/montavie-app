@@ -77,7 +77,7 @@ struct AllCommentView: View {
             commentData.fetchAllComments()
         }
         .fullScreenCover(isPresented: $showPost) {
-            PostViewSimple(post: $selectedPost, sessionAuth: sessionAuth)
+            PostViewSimple(post: $selectedPost, sessionAuth: sessionAuth, profileData: ProfileData())
         }
     }
 }

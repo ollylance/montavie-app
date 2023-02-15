@@ -12,6 +12,7 @@ import FirebaseAuth
 
 struct PostView: View {
     @ObservedObject var sessionAuth: SessionAuth
+    @ObservedObject var profileData: ProfileData
     @Binding var post: Post
     @Binding var show: Bool
     @State var showLocation = false
@@ -94,7 +95,7 @@ struct PostView: View {
             .padding(.trailing, 40)
         }
         .fullScreenCover(isPresented: $showComments) {
-            CommentView(post: $post, sessionAuth: sessionAuth)
+            CommentView(post: $post, profileData: profileData, sessionAuth: sessionAuth)
         }
         .fullScreenCover(isPresented: $showLocation) {
             LocationView(post: $post)
@@ -105,7 +106,7 @@ struct PostView: View {
 struct PostView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        PostView(sessionAuth: SessionAuth(), post: .constant(Post(text: "hello")), show: .constant(true), namespace: namespace)
+        PostView(sessionAuth: SessionAuth(), profileData: ProfileData(), post: .constant(Post(text: "hello")), show: .constant(true), namespace: namespace)
     }
 }
 

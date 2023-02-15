@@ -26,7 +26,7 @@ struct MainView: View {
             FeedView(feedData: feedData, profileData: profileData, sessionAuth: session)
                 .tabBarItem(tab: .feed, selection: $tabSelection)
             
-            MapView(tabSelection: $tabSelection, mapData: mapData, sessionAuth: session)
+            MapView(tabSelection: $tabSelection, mapData: mapData, sessionAuth: session, profileData: profileData)
                 .tabBarItem(tab: .map, selection: $tabSelection)
         }
         .onChange(of: tabSelection) { _ in
@@ -37,6 +37,7 @@ struct MainView: View {
             feedData.fetchData()
             mapData.fetchData()
             listen()
+            profileData.fetchBlockedUsers()
             if Auth.auth().currentUser != nil {
                 profileData.fetchProfile()
             }

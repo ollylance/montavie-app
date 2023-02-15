@@ -20,8 +20,14 @@ struct Profile: Identifiable, Equatable, Hashable, Codable {
     var email: String = ""
 }
 
+struct BlockedUser: Identifiable, Equatable, Hashable, Codable {
+    var id: UUID = UUID()
+    var email: String = ""
+}
+
 class ProfileData: ObservableObject {
     @Published var profile = Profile()
+    @Published var blockedUsers: Set<String> = []
     private var db = Firestore.firestore()
     private var storage = Storage.storage()
     
@@ -42,7 +48,37 @@ class ProfileData: ObservableObject {
         }
     }
     
-//    combine these three functions with proper guard stuff
+    func fetchBlockedUsers() {
+        db.collection("blocked").addSnapshotListener { (snap, err) in
+            guard let documents = snap?.documents else {
+                return
+            }
+            
+            self.blockedUsers = Set()
+            for data in documents {
+                let uid = data["uid"] as? String
+                if uid != nil && uid != "" {
+                    self.blockedUsers.insert(uid!)
+                }
+            }
+        }
+    }
+    
+    func blockUser(uid: String) {
+        if (Auth.auth().currentUser != nil && Auth.auth().currentUser!.email == "olly.lance15@gmail.com") {
+            self.db.collection("blocked").addDocument(data: [
+                "uid": uid
+            ]) { err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written")
+                }
+            }
+        }
+    }
+    
+    // combine these three functions with proper guard stuff
     func updateUsername(username: String, completion: @escaping((String?) -> ())) {
         if (Auth.auth().currentUser != nil) {
             let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
@@ -138,6 +174,8 @@ class ProfileData: ObservableObject {
             }
         }
     }
+    
+    
 }
 
 struct ProfileView: View {
