@@ -10,6 +10,7 @@
 <h4 align="center">A social app for friends and family of <a href="https://www.linkedin.com/in/oliverplance" target="_blank">@oliverplance</a> as he attempts to hike the Appalachian Trail.</h4>
 
 <p align="center">
+  <a href="#about">About</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#screenshots">Screenshots</a> •
   <a href="#contact">Contact</a> •
@@ -23,6 +24,10 @@
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/NewPost.gif" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/SigninVideo.gif" width="200"/>
 </div>
+
+## About
+
+Montavie allows users to track Oliver Lance's progress as he hikes the Appalachian Trail. This app features a simple feed that displays Oliver Lance's latest updates, along with a map that shows his location on the trail and where he's posted from. Users can comment on posts, provide encouragement and ask questions about his journey. Keep up with Oliver and join the adventure with Montavie!
 
 ## Key Features
 
