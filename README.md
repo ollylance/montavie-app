@@ -45,6 +45,10 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 * <b>Comments</b>
 	* Give comments on posts with a personalized message.
 	* These comments are aggregated into one place that allows @oliverplance to easily see what you say!
+* <b>Likes</b>
+	* Like a post to show your support.
+	* Likes use transactions to get rid of concurency issues.
+	* Can see all the users who liked your posts
 * <b>Map</b>
 	* View the Appalachian Trail plotted out onto the map.
 	* View all the locations of the posts.
@@ -54,6 +58,10 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 	* No need to signin to use the basic app functionality, however!
 	* Signin with a display name that will be shown when commenting.
 	* Edit your profile image to also be attached to comments.
+* <b>Reporting Comments</b>
+	* Users can report comments if they are inapropriate.
+	* This will be sent to @ollylance and will be handled
+	* @ollylance can block users and delete any comments as an administrator
 * <b>Widget</b>
 	* Add a widget to your phone that will update with the most current image!
 
