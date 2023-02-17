@@ -21,8 +21,8 @@
 </p>
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/FeedVideo.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/MapVideo.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/FeedVideo2.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/MapVideo2.gif" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/NewPost.gif" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/SigninVideo.gif" width="200"/>
 </div>
