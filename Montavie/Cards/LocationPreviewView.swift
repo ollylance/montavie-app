@@ -14,7 +14,9 @@ struct LocationPreviewView: View {
     @ObservedObject var sessionAuth: SessionAuth
     @ObservedObject var profileData: ProfileData
     @ObservedObject var mapData: MapData
-    @State var isOpenPost = false
+    @ObservedObject var likeData: LikeData
+    @ObservedObject var commentData: CommentData
+    @State var isOpenPost: Bool = false
     
     var body: some View {
         HStack (alignment: .bottom) {
@@ -68,20 +70,26 @@ struct LocationPreviewView: View {
                 
             }
         }
+        .onChange(of: isOpenPost) { new in
+            if new == true {
+                likeData.getLikes(post: post)
+                commentData.fetchComments(postID: post.key)
+            }
+        }
         .padding(20)
         .background(RoundedRectangle(cornerRadius: 20)
             .fill(.ultraThinMaterial)
             .offset(y: 65))
         .cornerRadius(20)
         .fullScreenCover(isPresented: $isOpenPost) {
-            PostViewSimple(post: $post, sessionAuth: sessionAuth, profileData: profileData)
+            PostViewSimple(post: $post, sessionAuth: sessionAuth, profileData: profileData, likeData: likeData, commentData: commentData)
         }
     }
 }
 
 struct LocationPreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationPreviewView(post: Post(), sessionAuth: SessionAuth(), profileData: ProfileData(), mapData: MapData())
+        LocationPreviewView(post: Post(), sessionAuth: SessionAuth(), profileData: ProfileData(), mapData: MapData(), likeData: LikeData(), commentData: CommentData())
             .padding()
     }
 }

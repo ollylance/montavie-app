@@ -46,6 +46,8 @@
 		383444842925DFE2004770EC /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383444832925DFE2004770EC /* DateFunctions.swift */; };
 		383444872926CFC3004770EC /* SDWebImagePhotosPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 383444862926CFC3004770EC /* SDWebImagePhotosPlugin */; };
 		3834448A2926D1D1004770EC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 383444892926D1D1004770EC /* SDWebImageSwiftUI */; };
+		3846909A299FFBB40081C603 /* LikeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38469099299FFBB40081C603 /* LikeData.swift */; };
+		3846909C29A006F70081C603 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846909B29A006F70081C603 /* LikesView.swift */; };
 		386F1C1329283D7E00B45390 /* ColorBlended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F1C1229283D7E00B45390 /* ColorBlended.swift */; };
 		386F1C162928697500B45390 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F1C152928697500B45390 /* MapView.swift */; };
 		386F1C1B292AE56600B45390 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 386F1C1A292AE56600B45390 /* Shimmer */; };
@@ -131,6 +133,8 @@
 		3834446E29248041004770EC /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		383444812925B4E7004770EC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		383444832925DFE2004770EC /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
+		38469099299FFBB40081C603 /* LikeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeData.swift; sourceTree = "<group>"; };
+		3846909B29A006F70081C603 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		386F1C1229283D7E00B45390 /* ColorBlended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlended.swift; sourceTree = "<group>"; };
 		386F1C152928697500B45390 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		386F1C1C292AEF2400B45390 /* NewPostSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostSettingsView.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 				38307DAE298D800500ED4B2D /* MapData.swift */,
 				383444832925DFE2004770EC /* DateFunctions.swift */,
 				38307DBA298DBB6700ED4B2D /* TrailData.geojson */,
+				38469099299FFBB40081C603 /* LikeData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				38307DBE298EC03400ED4B2D /* LocationPreviewView.swift */,
 				38307DC82990629600ED4B2D /* CommentView.swift */,
 				38DA5A442996C3570080FB34 /* AllCommentView.swift */,
+				3846909B29A006F70081C603 /* LikesView.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -468,10 +474,12 @@
 				383444822925B4E7004770EC /* MainView.swift in Sources */,
 				388B09D5292C1512000203CA /* ColorSelectionView.swift in Sources */,
 				38DA5A452996C3570080FB34 /* AllCommentView.swift in Sources */,
+				3846909C29A006F70081C603 /* LikesView.swift in Sources */,
 				38307DCB2991468D00ED4B2D /* CommentData.swift in Sources */,
 				380DC36F292014CF000A0EDD /* FeedView.swift in Sources */,
 				38B66D2F296CBCD2007CE718 /* LocationView.swift in Sources */,
 				386F1C1329283D7E00B45390 /* ColorBlended.swift in Sources */,
+				3846909A299FFBB40081C603 /* LikeData.swift in Sources */,
 				380DC36129201487000A0EDD /* MontavieApp.swift in Sources */,
 				38307DC1298EEF5300ED4B2D /* PostViewSimple.swift in Sources */,
 				382F6F61292FE452008AE30F /* RouteView.swift in Sources */,
@@ -668,7 +676,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,7 +720,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

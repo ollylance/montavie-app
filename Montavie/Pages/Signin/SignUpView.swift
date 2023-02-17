@@ -17,6 +17,7 @@ struct SignUpView: View {
     @State var username = ""
     @State var email = ""
     @State var password = ""
+    @State var acceptAgreements: Bool = false
     
     @State var signUpProcessing = false
     @State var signUpErrorMessage = ""
@@ -28,7 +29,7 @@ struct SignUpView: View {
             Text("montavie")
                 .padding(.bottom, 50)
                 .font(.system(size: 45, weight: .light, design: .rounded))
-            SignUpCredentialFields(username: $username, email: $email, password: $password)
+            SignUpCredentialFields(username: $username, email: $email, password: $password, acceptAgreements: $acceptAgreements)
             Button(action: {
                 signUpUser(userEmail: email, userPassword: password)
             }) {
@@ -38,7 +39,7 @@ struct SignUpView: View {
                     .background(.thinMaterial)
                     .cornerRadius(20)
             }
-            .disabled(!signUpProcessing && !email.isEmpty && !password.isEmpty ? false : true)
+            .disabled(!signUpProcessing && !email.isEmpty && !password.isEmpty ? false : true && !acceptAgreements)
             Group {
                 if signUpProcessing {
                     ProgressView()
@@ -102,28 +103,34 @@ struct SignUpCredentialFields: View {
     @Binding var username: String
     @Binding var email: String
     @Binding var password: String
+    @Binding var acceptAgreements: Bool
 
     var body: some View {
-        TextField("Display Name", text: $username)
-            .padding()
-            .background(Color("LightText"))
-            .cornerRadius(20)
-            .textInputAutocapitalization(.never)
-            .disableAutocorrection(true)
-        
-        TextField("Email", text: $email)
-            .padding()
-            .background(Color("LightText"))
-            .cornerRadius(20)
-            .textInputAutocapitalization(.never)
-            .disableAutocorrection(true)
-
-        SecureField("Password", text: $password)
-            .padding()
-            .background(Color("LightText"))
-            .cornerRadius(20)
-            .padding(.bottom, 30)
-            .textInputAutocapitalization(.never)
-            .disableAutocorrection(true)
+        VStack {
+            TextField("Display Name", text: $username)
+                .padding()
+                .background(Color("LightText"))
+                .cornerRadius(20)
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
+            
+            TextField("Email", text: $email)
+                .padding()
+                .background(Color("LightText"))
+                .cornerRadius(20)
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
+            
+            SecureField("Password", text: $password)
+                .padding()
+                .background(Color("LightText"))
+                .cornerRadius(20)
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
+            Text("By using this app you agree to our [Terms and Conditions](https://ollylance.github.io/montavie-ios/#eula) and [Privacy Policy](https://ollylance.github.io/montavie-ios/#privacy-policy)")
+                .font(.system(size: 12, weight: .light, design: .rounded))
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.bottom, 30)
     }
 }

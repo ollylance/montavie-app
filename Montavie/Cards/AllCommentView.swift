@@ -14,6 +14,7 @@ struct AllCommentView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var sessionAuth: SessionAuth
     @ObservedObject var commentData = CommentData()
+    @ObservedObject var likeData: LikeData
     @State var selectedPost: Post = Post()
     @State var showPost = false
     
@@ -76,14 +77,19 @@ struct AllCommentView: View {
         .task {
             commentData.fetchAllComments()
         }
+        .onChange(of: showPost) { new in
+            if new == true {
+                likeData.getLikes(post: selectedPost)
+            }
+        }
         .fullScreenCover(isPresented: $showPost) {
-            PostViewSimple(post: $selectedPost, sessionAuth: sessionAuth, profileData: ProfileData())
+            PostViewSimple(post: $selectedPost, sessionAuth: sessionAuth, profileData: ProfileData(), likeData: likeData, commentData: commentData)
         }
     }
 }
 
 struct AllCommentView_Previews: PreviewProvider {
     static var previews: some View {
-        AllCommentView(sessionAuth: SessionAuth(), commentData: CommentData())
+        AllCommentView(sessionAuth: SessionAuth(), commentData: CommentData(), likeData: LikeData())
     }
 }

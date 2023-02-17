@@ -13,6 +13,8 @@ struct MapView: View {
     @ObservedObject var mapData: MapData
     @ObservedObject var sessionAuth: SessionAuth
     @ObservedObject var profileData: ProfileData
+    @ObservedObject var likeData = LikeData()
+    @ObservedObject var commentData = CommentData()
     @State var selectedLocation: Post? = nil
     
     var body: some View {
@@ -27,7 +29,7 @@ struct MapView: View {
                                 if post == mapData.selectedLocation {
                                     VStack {
                                         Spacer()
-                                        LocationPreviewView(post: mapData.selectedLocation!, sessionAuth: sessionAuth, profileData: profileData, mapData: mapData)
+                                        LocationPreviewView(post: mapData.selectedLocation!, sessionAuth: sessionAuth, profileData: profileData, mapData: mapData, likeData: likeData, commentData: commentData)
                                             .padding()
                                     }
                                     .transition(.asymmetric(insertion: .opacity, removal: .opacity))

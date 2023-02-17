@@ -90,10 +90,16 @@ struct NewPostAddView: View {
                 }
             }
             .sheet(isPresented: $showDatePicker) {
-                DatePicker("", selection: $post.date)
-                    .datePickerStyle(GraphicalDatePickerStyle())
-                    .frame(alignment: .leading)
-                    .presentationDetents([.height(400)])
+                if #available(iOS 16, *) {
+                    DatePicker("", selection: $post.date)
+                        .datePickerStyle(GraphicalDatePickerStyle())
+                        .frame(alignment: .leading)
+                        .presentationDetents([.height(400)])
+                } else {
+                    DatePicker("", selection: $post.date)
+                        .datePickerStyle(GraphicalDatePickerStyle())
+                        .frame(alignment: .leading)
+                }
             }
             .fullScreenCover(isPresented: $showLocation) {
                 LocationView(post: $post)

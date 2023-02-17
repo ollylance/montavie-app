@@ -14,7 +14,7 @@ struct CommentView: View {
     @Binding var post: Post
     @ObservedObject var profileData: ProfileData
     @ObservedObject var sessionAuth: SessionAuth
-    @ObservedObject var commentData = CommentData()
+    @ObservedObject var commentData: CommentData
     @StateObject private var keyboard = KeyboardResponder()
     @State var comment: String = ""
     
@@ -83,9 +83,6 @@ struct CommentView: View {
             
             KeyboardInput
         }
-        .task {
-            commentData.fetchComments(postID: post.key)
-        }
     }
 }
 
@@ -128,8 +125,8 @@ extension CommentView {
                 }
                 .disabled(!sessionAuth.isUserLoggedIn())
             }
-                .padding()
-                .background(Color.white)
+            .padding()
+            .background(Color.white)
         }
     }
 }
@@ -171,6 +168,6 @@ extension CommentView {
 
 struct CommentView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentView(post: .constant(Post()), profileData: ProfileData(), sessionAuth: SessionAuth())
+        CommentView(post: .constant(Post()), profileData: ProfileData(), sessionAuth: SessionAuth(), commentData: CommentData())
     }
 }

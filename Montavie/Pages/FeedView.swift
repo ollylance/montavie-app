@@ -13,6 +13,8 @@ struct FeedView: View {
     @ObservedObject var feedData: FeedData
     @ObservedObject var profileData: ProfileData
     @ObservedObject var sessionAuth: SessionAuth
+    @ObservedObject var likeData = LikeData()
+    @ObservedObject var commentData = CommentData()
     @State var firstAppear = true
     @State var showProfile = false
     @Namespace var namespace
@@ -92,24 +94,41 @@ struct FeedView: View {
                                 }
                             }
                         }
-                        .scrollContentBackground(.hidden)
                         .listStyle(.plain)
                         .navigationBarTitleDisplayMode(.inline)
                     }
                 }
                 .sheet(isPresented: $showProfile) {
-                    SettingsView(profileData: profileData, sessionAuth: sessionAuth)
-                        .presentationDetents([.height(sessionAuth.isUserLoggedIn() ? 350 : 180)])
+                    if #available(iOS 16, *) {
+                        if sessionAuth.isUserLoggedIn() {
+                            SettingsView(profileData: profileData, sessionAuth: sessionAuth)
+                                .presentationDetents([.height(sessionAuth.isUserLoggedIn() ? 350 : 180)])
+                        } else {
+                            UserAuthView(viewRouter: ViewRouter(), profileData: profileData)
+                        }
+                    } else {
+                        if sessionAuth.isUserLoggedIn() {
+                            SettingsView(profileData: profileData, sessionAuth: sessionAuth)
+                        } else {
+                            UserAuthView(viewRouter: ViewRouter(), profileData: profileData)
+                        }
+                    }
                 }
                 .fullScreenCover(isPresented: $isNewPostPresenting) {
                     NewPostView()
                 }
                 .fullScreenCover(isPresented: $isAllCommentsPresenting) {
-                    AllCommentView(sessionAuth: sessionAuth, commentData: CommentData())
+                    AllCommentView(sessionAuth: sessionAuth, commentData: CommentData(), likeData: likeData)
                 }
             }
             if show {
-                PostView(sessionAuth: sessionAuth, profileData: profileData, post: $selected, show: $show, namespace: namespace)
+                PostView(sessionAuth: sessionAuth, profileData: profileData, likeData: likeData, commentData: commentData, post: $selected, show: $show, namespace: namespace)
+            }
+        }
+        .onChange(of: show) { new in
+            if new == true {
+                likeData.getLikes(post: selected)
+                commentData.fetchComments(postID: selected.key)
             }
         }
     }
