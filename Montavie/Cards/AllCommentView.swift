@@ -13,7 +13,7 @@ import SDWebImageSwiftUI
 struct AllCommentView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var sessionAuth: SessionAuth
-    @ObservedObject var commentData = CommentData()
+    @ObservedObject var commentData: CommentData
     @ObservedObject var likeData: LikeData
     @State var selectedPost: Post = Post()
     @State var showPost = false
@@ -80,6 +80,9 @@ struct AllCommentView: View {
         .onChange(of: showPost) { new in
             if new == true {
                 likeData.getLikes(post: selectedPost)
+                commentData.fetchComments(postID: selectedPost.key)
+            } else {
+                commentData.fetchAllComments()
             }
         }
         .fullScreenCover(isPresented: $showPost) {

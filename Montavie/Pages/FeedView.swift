@@ -29,7 +29,7 @@ struct FeedView: View {
     var body: some View {
         ZStack {
             VStack {
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     HStack {
                         Text("Posts")
                             .padding()
