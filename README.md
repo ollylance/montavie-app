@@ -70,12 +70,13 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7285.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7286.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/PostView.jpeg" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7287.PNG" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7288.PNG" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7289.PNG" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7290.PNG" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_2FAB4EB90B33-1.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/CommentOptions.jpeg" width="200"/>
 	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7291.jpg" width="200"/>
 
 </div>
