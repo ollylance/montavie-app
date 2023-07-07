@@ -2,13 +2,13 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/MontavieLogo.png" alt="montavie" width="200"></a>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/MontavieLogo.png" alt="montavie" width="200"></a>
   <br>
   montavie
   <br>
 </h1>
 
-<h4 align="center">A social app for friends and family of <a href="https://www.linkedin.com/in/oliverplance" target="_blank">@oliverplance</a> as he attempts to hike the Appalachian Trail.</h4>
+<h4 align="center">A social app for friends and family of <a href="https://www.linkedin.com/in/ollyplance" target="_blank">@ollyplance</a> as he attempts to hike the Appalachian Trail.</h4>
 
 <p align="center">
   <a href="#about">About</a> •
@@ -21,10 +21,10 @@
 </p>
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/FeedVideo2.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/MapVideo2.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/NewPost.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/SigninVideo.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/FeedVideo2.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/MapVideo2.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/NewPost.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/SigninVideo.gif" width="200"/>
 </div>
 
 ## About
@@ -39,12 +39,12 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 	* The polaroids are customizable and editable with different sizes (3) and colors (10).
 	* If uploaded, the app will read the specific image date and location from the image. Otherwise, ill will take the current date and location.
 * <b>Feed</b>
-	* Scroll through all posts made by @oliverplance during the hike.
+	* Scroll through all posts made by @ollyplance during the hike.
 	* Loaded by date.
 	* The UI loads in steps on the side as you walk through his journey.
 * <b>Comments</b>
 	* Give comments on posts with a personalized message.
-	* These comments are aggregated into one place that allows @oliverplance to easily see what you say!
+	* These comments are aggregated into one place that allows @ollyplance to easily see what you say!
 * <b>Likes</b>
 	* Like a post to show your support.
 	* Likes use transactions to get rid of concurency issues.
@@ -60,8 +60,8 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 	* Edit your profile image to also be attached to comments.
 * <b>Reporting Comments</b>
 	* Users can report comments if they are inapropriate.
-	* This will be sent to @ollylance and will be handled
-	* @ollylance can block users and delete any comments as an administrator
+	* This will be sent to @ollyplance and will be handled
+	* @ollyplance can block users and delete any comments as an administrator
 * <b>Widget</b>
 	* Add a widget to your phone that will update with the most current image!
 
@@ -69,15 +69,15 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 ## Screenshots
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7285.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/PostView.jpeg" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7287.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7288.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7289.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7290.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_2FAB4EB90B33-1.jpeg" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/CommentOptions.jpeg" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollylance/montavie-ios-app/master/Docs/Assets/IMG_7291.jpg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7285.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/PostView.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7287.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7288.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7289.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7290.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_2FAB4EB90B33-1.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/CommentOptions.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7291.jpg" width="200"/>
 
 </div>
 
@@ -87,7 +87,7 @@ You can contact support through any of the following means:
 >
 > Instagram: [@themontavie](https://www.instagram.com/themontavie)
 >
-> Email:  [olly.lance15@gmail.com](mailto:olly.lance15@gmail.com)
+> Email:  [ollyplance@gmail.com](mailto:ollyplance@gmail.com)
 > 
 > Phone: 717-553-3107 
 > 
@@ -153,7 +153,7 @@ This policy is effective as of 2022-12-22
 
 **Contact Us**
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at olly.lance15@gmail.com.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at ollyplance@gmail.com.
 
 ---
 
@@ -241,7 +241,7 @@ The Licensed Application is not tailored to comply with industry-specific regula
 
 ********5\. USE OF DATA********
 
-You acknowledge that Licensor will be able to access and adjust Your downloaded Licensed Application content and Your personal information, and that Licensor's use of such material and information is subject to Your legal agreements with Licensor and Licensor's privacy policy: [https://ollylance.github.io/montavie-ios/#privacy-policy](https://ollylance.github.io/montavie-ios/#privacy-policy).
+You acknowledge that Licensor will be able to access and adjust Your downloaded Licensed Application content and Your personal information, and that Licensor's use of such material and information is subject to Your legal agreements with Licensor and Licensor's privacy policy: [https://ollyplance.github.io/montavie-ios/#privacy-policy](https://ollyplance.github.io/montavie-ios/#privacy-policy).
 
 You acknowledge that the Licensor may periodically collect and use technical data and related information about your device, system, and application software, and peripherals, offer product support, facilitate the software updates, and for purposes of providing other services to you (if any) related to the Licensed Application. Licensor may also use this information to improve its products or to provide services or technologies to you, as long as it is in a form that does not personally identify you.
 
@@ -329,7 +329,7 @@ Lititz, PA 17543
 
 United States
 
-olly.lance15@gmail.com
+ollyplance@gmail.com
 
 **********************13\. TERMINATION**********************
 
