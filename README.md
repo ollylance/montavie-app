@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/ollyplance/montavie/master/Docs/Assets/MontavieLogo.png" alt="montavie" width="200"></a>
+  <a href="http://www.github.com/ollyplance/montavie-ios"><img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/MontavieLogo.png" alt="montavie" width="200"></a>
   <br>
   montavie
   <br>
