@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/MontavieLogo.png" alt="montavie" width="200"></a>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/ollyplance/montavie/master/Docs/Assets/MontavieLogo.png" alt="montavie" width="200"></a>
   <br>
   montavie
   <br>
@@ -21,10 +21,10 @@
 </p>
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/FeedVideo2.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/MapVideo2.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/NewPost.gif" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/SigninVideo.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/FeedVideo2.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/MapVideo2.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/NewPost.gif" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/SigninVideo.gif" width="200"/>
 </div>
 
 ## About
@@ -69,15 +69,15 @@ Montavie allows users to track Oliver Lance's progress as he hikes the Appalachi
 ## Screenshots
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7285.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/PostView.jpeg" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7287.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7288.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7289.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7290.PNG" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_2FAB4EB90B33-1.jpeg" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/CommentOptions.jpeg" width="200"/>
-	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios-app/master/Docs/Assets/IMG_7291.jpg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_7285.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/PostView.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_7287.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_7288.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_7289.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_7290.PNG" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_2FAB4EB90B33-1.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/CommentOptions.jpeg" width="200"/>
+	<img src="https://raw.githubusercontent.com/ollyplance/montavie-ios/master/Docs/Assets/IMG_7291.jpg" width="200"/>
 
 </div>
 
